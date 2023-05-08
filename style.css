@@ -1,0 +1,134 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Comic+Neue&family=Montserrat:wght@400;600&family=Nunito:wght@300&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3a7bd5;  
+    background-color: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  
+    background-color: linear-gradient(to right, #3a6073, #3a7bd5);
+}
+.container{
+    max-width: 550px;
+    padding: 28px 0 30px;
+    margin: 137px auto;
+    background: #f0ebeb;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.397);
+}
+.display-date{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.display-time{
+    position: relative;
+    float: right;
+    bottom: 52px;
+    right: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+header{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #f45050;
+}
+header hr{
+    margin-right: 20px;
+    color: #87c9ea;
+}
+.task-input input{
+    width: 70%;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 7px;
+    border-color:transparent;
+    background-color: #87c9ea26;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+.task-input input::placeholder{
+  color: #b0adad;
+}
+.task-input button{
+    padding: 10px;
+    float: right;
+    margin-right: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.task-input button i{
+    margin-right: 10px;
+}
+.task-input button:hover{
+    padding: 0.6rem;
+}
+ul{
+    margin-top: 20px;
+    list-style: none;
+    color: #e0e0e0;
+    padding: 0;
+}
+ul li {
+    padding: 10px;
+} 
+li .check {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3a607399;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    
+}
+li .check:checked {
+    background-color:#3a4674;
+}
+
+li .task {
+    font-size: 20px;
+    padding:5px 10px;
+    width: 75%;
+    background-color:#86a8b90f;
+    border: none;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2950;
+}
+  
+.task:focus {
+    outline: none;
+}
+  
+ul li i {
+    float: right;
+    cursor: pointer;
+    color: #039fec;
+    font-size: 22px;
+    padding: 10px;
+}
+  
+ul li i:hover {
+    color: rgb(255, 82, 82);
+    transition: transform 0.3s ease;
+    transform: rotate(20deg);
+}
+ul  li i:active{
+    transform: scale(1.1);
+  }  
+  .completed {
+    color: rgba(33, 32, 32, 0.8);
+    text-decoration: line-through;
+  }
